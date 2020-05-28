@@ -40,6 +40,7 @@ body {
   background-position: center;
 }
 #lunar-lander {
+  display: grid;
   background-color: coral;
 }
 
@@ -107,20 +108,18 @@ body {
 }
 
 #image1 {
-  display: grid;
   grid-row: 3/4;
   grid-column: 1/3;
   background-image: url(startLL.PNG);
 }
 
 #image2 {
-  display: grid;
   grid-row: 3/4;
   grid-column: 1/3;
   background-image: url(cover.png);
 }
 
-#lunar-lander-content {
+#content_1 {
   display: grid;
   grid-row: 3/4;
   grid-column: 1/3;
@@ -131,13 +130,33 @@ body {
   grid-column: 1/2;
 }
 
-#tower-defense-content {
-  display: grid;
+#content_2 {
+  visibility: hidden;
+  display: none;
   grid-row: 4/5;
   grid-column: 1/3;
 }
 
 #tower-defense-text {
+  grid-row: 3/4;
+  grid-column: 1/2;
+}
+
+#content_3 {
+  visibility: hidden;
+  display: none;
+  grid-row: 3/4;
+  grid-column: 1/3;
+}
+
+.p5Canvas {
+  grid-row: 3/4;
+  grid-column: 2/3;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+#yahtzee-text {
   grid-row: 3/4;
   grid-column: 1/2;
 }

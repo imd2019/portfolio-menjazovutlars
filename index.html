@@ -3,19 +3,38 @@
   <head>
     <title>Lars Brandies Portfolio</title>
     <link rel="stylesheet" type="text/css" href="portfolio.css" />
+    <script src="portfolio.js"></script>
   </head>
   <body>
     <div class="grid-container">
       <div class="menue">
-        <div class="flex-container" id="lunar-lander">Lunar Lander</div>
-        <div class="flex-container" id="tower-defense">Tower Defense</div>
-        <div class="flex-container" id="yahtzee">Yahtzee</div>
+        <div
+          class="flex-container"
+          id="lunar-lander"
+          onclick="pagechange(2 ,1);pagechange(3,1);"
+        >
+          Lunar Lander
+        </div>
+        <div
+          class="flex-container"
+          id="tower-defense"
+          onclick="pagechange(1 ,2);pagechange(3 ,2)"
+        >
+          Tower Defense
+        </div>
+        <div
+          class="flex-container"
+          id="yahtzee"
+          onclick="pagechange(1,3);pagechange(2,3);"
+        >
+          Yahtzee
+        </div>
         <div class="flex-container" id="about-me">About Me</div>
       </div>
       <div class="logo"></div>
       <div class="background"></div>
 
-      <section id="lunar-lander-content">
+      <section id="content_1" style="display: grid;">
         <div class="image" id="image1"></div>
         <div class="content" id="lunar-lander-text">
           Als erstes größeres Projekt in Creative Coding mussten wir ein Lunar
@@ -34,7 +53,7 @@
           Bereichs und der Tank hat noch Treibstoff übrig, gewinnt man das Game.
         </div>
       </section>
-      <section id="tower-defense-content">
+      <section id="content_2">
         <div class="image" id="image2"></div>
         <div class="content" id="tower-defense-text">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -54,8 +73,33 @@
           Lorem ipsum dolor sit amet.
         </div>
       </section>
-
-      <div>8</div>
+      <section id="content_3">
+        <div class="content" id="yahtzee-text">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+          ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+          sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+          et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+          takimata sanctus est Lorem ipsum dolor sit amet.
+          <br />
+          <br />Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+          diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+          erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+          et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+          Lorem ipsum dolor sit amet.
+        </div>
+        <script type="module" src="/yahtzee/p5.min.js"></script>
+        <script type="module" src="/yahtzee/p5setup.js"></script>
+        <script type="module" src="/yahtzee/sketch.js"></script>
+        <canvas
+          class="p5Canvas"
+          id="defaultCanvas0"
+          style="width: 50vw; height: 50vw;"
+        ></canvas>
+      </section>
     </div>
   </body>
 </html>
