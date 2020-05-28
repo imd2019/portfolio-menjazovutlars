@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 45% auto;
+  grid-template-rows: auto auto auto;
+}
+
+.background {
+  display: grid;
+  grid-row: 1/2;
+  grid-column: 1/3;
+  background-image: url(diego-ph-fIq0tET6llw-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 30vw;
+}
+
+.logo {
+  position: absolute;
+  display: grid;
+  grid-row: 1/2;
+  height: 10vw;
+  width: 10vw;
+  background-color: rgb(197, 245, 197);
+  background-image: url(presentation.svg);
+  background-size: cover;
+  background-position: center;
+}
+#lunar-lander {
+  background-color: coral;
+}
+
+#lunar-lander:hover {
+  background-color: rgb(151, 148, 148);
+}
+
+#tower-defense {
+  background-color: goldenrod;
+}
+
+#tower-defense:hover {
+  background-color: rgb(151, 148, 148);
+}
+
+#yahtzee {
+  background-color: silver;
+}
+
+#yahtzee:hover {
+  background-color: rgb(151, 148, 148);
+}
+#about-me {
+  background-color: greenyellow;
+}
+
+#about-me:hover {
+  background-color: rgb(151, 148, 148);
+}
+.menue {
+  height: 3vw;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  flex-direction: row;
+  grid-row: 2/3;
+  grid-column: 1/3;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1vw;
+}
+
+.menue:hover {
+  background-color: black;
+}
+
+.content {
+  padding: 5%;
+  width: 40vw;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 40vw;
+  background-color: rgba(228, 181, 163, 0.87);
+  font-size: 1.3vw;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 300;
+}
+
+.image {
+  background-blend-mode: normal;
+  height: auto;
+  background-size: cover;
+  display: grid;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#image1 {
+  display: grid;
+  grid-row: 3/4;
+  grid-column: 1/3;
+  background-image: url(startLL.PNG);
+}
+
+#image2 {
+  display: grid;
+  grid-row: 3/4;
+  grid-column: 1/3;
+  background-image: url(cover.png);
+}
+
+#lunar-lander-content {
+  display: grid;
+  grid-row: 3/4;
+  grid-column: 1/3;
+}
+
+#lunar-lander-text {
+  grid-row: 3/4;
+  grid-column: 1/2;
+}
+
+#tower-defense-content {
+  display: grid;
+  grid-row: 4/5;
+  grid-column: 1/3;
+}
+
+#tower-defense-text {
+  grid-row: 3/4;
+  grid-column: 1/2;
+}
