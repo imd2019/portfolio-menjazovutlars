@@ -5,8 +5,8 @@ import ChoosePlayersButton from "./choosePlayersButton.js";
 import GameOverButton from "./gameOverButton.js";
 // import Aces from "./aces.js";
 
-let responsiveX = windowWidth / 4;
-let responsiveY = windowHeight / 25;
+let responsiveX = windowWidth / 200;
+let responsiveY = windowHeight / 400;
 
 let dice = [];
 for (let i = 0; i < 5; i++) {
@@ -191,7 +191,6 @@ function nextTurn() {
 }
 
 function draw() {
-  background(250, 250, 250);
   for (let index in dice) {
     dice[index].display();
   }

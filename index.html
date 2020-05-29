@@ -4,6 +4,9 @@
     <title>Lars Brandies Portfolio</title>
     <link rel="stylesheet" type="text/css" href="portfolio.css" />
     <script src="portfolio.js"></script>
+    <script type="module" src="/yahtzee/p5.min.js"></script>
+    <script type="module" src="/yahtzee/p5setup.js"></script>
+    <script type="module" src="/yahtzee/sketch.js"></script>
   </head>
   <body>
     <div class="grid-container">
@@ -55,6 +58,11 @@
       </section>
       <section id="content_2">
         <div class="image" id="image2"></div>
+        <div class="td-frame">
+          <div class="wrap">
+            <iframe id="frame" src="https://menjazovutlars.github.io/"></iframe>
+          </div>
+        </div>
         <div class="content" id="tower-defense-text">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
@@ -91,14 +99,8 @@
           et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
           Lorem ipsum dolor sit amet.
         </div>
-        <script type="module" src="/yahtzee/p5.min.js"></script>
-        <script type="module" src="/yahtzee/p5setup.js"></script>
-        <script type="module" src="/yahtzee/sketch.js"></script>
-        <canvas
-          class="p5Canvas"
-          id="defaultCanvas0"
-          style="width: 50vw; height: 50vw;"
-        ></canvas>
+
+        <div class="p5Canvas" id="sketch-holder"></div>
       </section>
     </div>
   </body>

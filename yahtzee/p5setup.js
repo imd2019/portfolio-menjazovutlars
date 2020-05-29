@@ -3,12 +3,13 @@ let width = windowWidth;
 let height = windowHeight;
 
 function setup() {
-  sketch.createCanvas(windowWidth, windowHeight);
+  let s = sketch.createCanvas(windowWidth / 3, windowHeight / 1.2);
   sketch.frameRate(30);
+  s.parent("sketch-holder");
 }
 window.setup = setup;
 
 function windowResized() {
-  sketch.resizeCanvas(windowWidth, windowHeight);
+  sketch.resizeCanvas(windowWidth / 3, windowHeight / 1.2);
 }
 window.addEventListener("resize", windowResized);
