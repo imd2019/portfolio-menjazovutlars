@@ -6,6 +6,7 @@ function pagechange(frompage, topage) {
 
   page = document.getElementById("content_" + topage);
   if (!page) return false;
+  document.location.hash = "content" + topage;
   page.style.display = "grid";
   page.style.visibility = "visible";
 
